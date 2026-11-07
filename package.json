@@ -1,12 +1,16 @@
 {
   "name": "playwright-orangehrm",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "End-to-end test suite for the OrangeHRM demo using Playwright, TypeScript and the Page Object Model.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Federico Ojeda",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.64.0",
